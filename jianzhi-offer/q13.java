@@ -2,12 +2,14 @@
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class q13 {
     public void reOrderArray(int [] array) {
         int len = array.length;
         int[] tmp = new int[len];
         int index = 0;
+//        Stack<Integer> stack = new Stack<>();
         Queue<Integer> queue = new LinkedList<>();
         for(int i = 0; i<len; i++){
             if(array[i]%2!=0){
